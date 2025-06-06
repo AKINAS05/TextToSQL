@@ -66,8 +66,7 @@ class StatusResponse(BaseModel):
     last_updated: Optional[str] = None
     schema_tables_count: Optional[int] = None
 
-class ExecuteSQLRequest(BaseModel):
-    sql_query: str
+
 
 class LocalEmbedder:
     def __init__(self, model_name=DEFAULT_EMBEDDING_MODEL):
